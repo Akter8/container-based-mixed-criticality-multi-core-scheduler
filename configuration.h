@@ -1,0 +1,1 @@
+#define FILE_INPUT_A "input_A.txt"

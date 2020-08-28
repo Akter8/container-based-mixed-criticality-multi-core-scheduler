@@ -1,0 +1,21 @@
+5
+
+1
+1 2 3 4
+
+2
+2 3 4 5
+
+2.5
+2 3 4 5
+
+3
+3 3.5 4 4.5
+
+4
+1 2 3 4
+
+-----------------------------
+First line: Number of level-A jobs.
+Each job:       arrival_time
+                A.e     B.e     C.e     D.e

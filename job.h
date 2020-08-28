@@ -1,16 +1,30 @@
+#include <stdbool.h>
+
 typedef struct
 {
+    int criticality_level;
+
     // Timing characteristics of the job.
-    long arrival_time;
-    float wcet; // Worst-case execution time.
+    float arrival_time;
+    float wcet[4]; // Worst-case execution time for each criticality level.
     float aet; // Actual execution time.
     float time_executed; // Total amount of time the job has executed for so far.
     float time_left; // Time left in overall execution. Will be 0 when job has finished executing.
     long absolute_deadline;
     float finish_time;
 
-    // To find whether a job has completed or has already been accepted.
+    // To find whether a job has completed and/or has already been accepted.
     bool alive;
     bool admitted;
 }
 Job;
+
+// Functions
+
+void input_jobs(); // Calls the input function for each criticality, puts them in their respective container.
+
+void input_jobs_A();
+
+void print_jobs();
+
+// Need separate input function for each level.
