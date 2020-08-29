@@ -1,0 +1,15 @@
+3
+
+2 12
+2 3 4
+
+5 15
+3 4 5
+
+10 20
+3 3.3 3.5
+
+--------------------------------------------
+First line: Number of jobs
+Each job:   arrival_time    absolute_deadline
+            D.e     C.e     B.e

@@ -3,13 +3,10 @@
 #include "utility.h"
 #include "job.h"
 
-FILE* file_input_level_A;
-Job* jobs_A;
+FILE* file_input[0];
+Job* jobs[4];
 
-int num_jobs_A;
-int num_jobs_B;
-int num_jobs_C;
-int num_jobs_D;
+int num_jobs[4];
 
 int main()
 {
