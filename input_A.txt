@@ -6,7 +6,16 @@
 4 6
 0.25 0.5 1 2
 
+2
+
+0.5 1.5
+0.25 0.5 0.75 1
+
+4 6
+0.25 0.5 1 2
+
 -----------------------------
-First line: Number of level-A jobs.
+Each Processor:     Number_jobs_in_processor
+                    Job input
 Each job:       arrival_time    absolute_deadline
                 D.e     C.e     B.e     A.e

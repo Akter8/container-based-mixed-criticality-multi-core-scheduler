@@ -1,18 +1,17 @@
 #include <stdio.h>
 
 #include "utility.h"
-#include "container.h"
+#include "cpu.h"
 
 FILE* file_input[0];
-Container containers[4];
-
-int num_jobs[4];
+FILE* file_output;
+CPU cpu;
 
 int main()
 {
     // Take input.
     open_files();
-    init_containers();
+    init_cpu();
 
     // Run the scheduler.
 
