@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 #include "utility.h"
-#include "job.h"
+#include "container.h"
 
 FILE* file_input[0];
-Job* jobs[4];
+Container containers[4];
 
 int num_jobs[4];
 
@@ -12,7 +12,7 @@ int main()
 {
     // Take input.
     open_files();
-    input_jobs();
+    init_containers();
 
     // Run the scheduler.
 

@@ -1,5 +1,7 @@
 #include <stdbool.h>
 
+#include "job.h"
+
 typedef struct
 {
     // No need for holding the container level, index in array will do that.
@@ -8,3 +10,6 @@ typedef struct
     Job *jobs;
 }
 Container;
+
+
+void init_containers();

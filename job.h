@@ -20,12 +20,7 @@ typedef struct
 Job;
 
 // Functions
-
-void input_jobs(); // Calls the input function for each criticality, puts them in their respective container.
-
-void input_level_jobs(int);
-void sort_level_jobs(int);
-
-void print_level_jobs(int);
-
-// Need separate input function for each level.
+void create_level_jobs(int, Job**);
+void input_level_jobs(int, Job*);
+void sort_level_jobs(int, Job*);
+void print_level_jobs(int, Job*);
